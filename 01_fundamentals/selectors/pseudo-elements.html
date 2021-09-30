@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudo elements</title>
+</head>
+<style>
+  input {
+    font-size: 1rem;
+  }
+  input::placeholder {
+    color: goldenrod;
+  }
+  p::before {
+    content: "-> ";
+    color: deeppink;
+  }
+  p::after {
+    content: " <-";
+    color: deeppink;
+  }
+  div::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: peachpuff;
+    margin: 8px;
+  }
+</style>
+<body>
+  <label>
+    Postal Code:
+    <input
+      type="text"
+      placeholder="A1A 1A1"
+    />
+  </label>
+  <p>This paragraph has little arrows!</p>
+  <div>This div has little arrows!</div>
+</body>
+</html>
