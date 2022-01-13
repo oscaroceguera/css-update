@@ -1,0 +1,16 @@
+body {
+  --pink-hue: 340deg;
+  --blue-hue: 275deg;
+  --intense: 100% 50%;
+
+  --color-primary: hsl(var(--pink-hue) var(--intense));
+  --color-secondary: hsl(var(--blue-hue) var(--intense));
+}
+
+strong {
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-secondary);
+}
