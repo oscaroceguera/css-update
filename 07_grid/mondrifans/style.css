@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: hsl(0deg 0% 2%);
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  --blue: hsl(250deg 100% 55%);
+  --yellow: hsl(50deg 100% 50%);
+  --red: hsl(350deg 100% 45%);
+  --white: hsl(0deg 0% 100%);
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 200px 1fr;
+  gap: 32px 16px;
+}
+
+.blue-box {
+  background-color: var(--blue);
+}
+.red-box {
+  background-color: var(--red);
+}
+header {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 8px 16px;
+}
+main {
+  background-color: var(--white);
+}
