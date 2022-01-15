@@ -1,0 +1,33 @@
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.btn.one {
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.btn.two {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.btn.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+.btn.four {
+  grid-column: 1;
+  grid-row: 1;
+}
+.btn.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.btn.six {
+  grid-column: 4;
+  grid-row: 3;
+}

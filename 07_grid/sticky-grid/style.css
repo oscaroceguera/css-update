@@ -1,0 +1,64 @@
+.grid {
+  --header-height: 5rem;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 14rem 1fr;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  isolation: isolate;
+}
+
+header {
+  grid-area: header;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: grid;
+  place-content: center;
+  height: var(--header-height);
+  border-bottom: 3px solid;
+  background: peru;
+}
+
+aside {
+  grid-area: sidebar;
+  position: relative;
+  z-index: 1;
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: var(--header-height);
+}
+
+main {
+  grid-area: main;
+  /*
+    Add a bunch of height, to simulate it
+    being full of content
+  */
+  min-height: 180vh;
+  border: 3px solid;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  place-content: center;
+  height: 5rem;
+  border-top: 3px solid;
+  background: purple;
+}
+
+.grid > * {
+  padding: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
