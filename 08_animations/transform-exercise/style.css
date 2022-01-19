@@ -1,0 +1,31 @@
+.dialog-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(0deg 0% 0% / 0.75);
+  display: grid;
+  place-content: center;
+}
+
+.dialog-content {
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+}
+
+.close-btn {
+  padding: 16px;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  color: white;
+}
